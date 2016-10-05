@@ -1,0 +1,437 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+/*carousel*/
+
+#slide1 {
+  background-image: url(../images/hero-image.png);
+}
+
+#slide2 {
+  background-image: url(../images/hero2.png);
+}
+
+.slide-image {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+
+#carousel {
+  height: 100vh;
+  width: 100vw;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+.arrow {
+  width: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#right-arrow {
+  right: 20px;
+}
+
+#left-arrow {
+  left: 20px;
+}
+
+
+/*hero section*/
+
+/*.hero {
+height: 678px;
+width: 100%;
+background-size: cover;
+color: white;
+background-image: url(../images/hero-image.png);
+}*/
+
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
+nav {
+	height: 100px;
+	width: auto;
+	position: relative;
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+.logo {
+	padding: 20px 20px 20px 75px;
+	position: relative;
+	float: left;
+	z-index: 1;
+/*  	top: 50%;
+  	transform: translateY(-50%);*/
+}
+
+.hero-links {
+	font-weight: 700;
+	padding: 0px 75px 0px 20px;
+	margin: 0;
+	position: relative;
+	float: right;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+li {
+	display:inline-block;
+	padding: 0px 20px 0px 20px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav-links a:hover {
+	color: #CA4949; 
+}
+
+.hero-container {
+	padding: 75px 75px 75px 75px;
+
+}
+
+.hero h1 {
+	font-weight: 700;
+	font-size: 70px;
+	padding: 50px 0px 50px 0px;
+}
+
+.hero h2 {
+	font-weight: 400;
+	font-size: 30px;
+	padding: 20px 0px 70px 0px;
+}
+
+.cta {
+  background: #CA4949;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px 70px;
+}
+
+.cta:hover {
+  background-color: white;
+  color: #CA4949;
+}
+
+
+/*bike display grid */
+
+.bike-section {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.bike-container {
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.bike-grid {
+	margin: 20px 20px 20px 20px;
+}
+
+.row-one {
+	height: auto;
+	width: auto;
+	float: left;
+}
+
+#bike-one {
+	width: 300px;
+	height: 200px;
+	background-image: url(../images/bike-one-small.png);
+	background-size: cover;
+	position: relative;
+	float: left;
+}
+
+#bike-two {
+	width: 300px;
+	height: 200px;
+	background-image: url(../images/bike-two-small.png);
+	background-size: cover;
+	position: relative;
+	float: left;
+}
+
+#bike-three {
+	width: 300px;
+	height: 200px;
+	background-image: url(../images/bike-three-small.png);
+	background-size: cover;
+	position: relative;
+	float: left;
+}
+
+.row-two {
+	height: auto;
+	width: auto;
+	clear: left;
+	float: left;
+}
+
+#bike-four {
+	width: 300px;
+	height: 200px;
+	background-image: url(../images/bike-four-small.png);
+	background-size: cover;
+	position: relative;
+	float: left;
+}
+
+#bike-five {
+	width: 300px;
+	height: 200px;
+	background-image: url(../images/bike-five-small.png);
+	background-size: cover;
+	position: relative;
+	float: left;
+}
+
+#bike-six {
+	width: 300px;
+	height: 200px;
+	background-image: url(../images/bike-six-small.png);
+	background-size: cover;
+	position: relative;
+	float: left;
+}
+
+.row-three {
+	height: auto;
+	width: auto;
+	clear: left;
+	float: left;
+}
+
+#bike-seven {
+	width: 300px;
+	height: 200px;
+	background-image: url(../images/bike-seven-small.png);
+	background-size: cover;
+	position: relative;
+	float: left;
+}
+
+#bike-eight {
+	width: 300px;
+	height: 200px;
+	background-image: url(../images/bike-eight-small.png);
+	background-size: cover;
+	position: relative;
+	float: left;
+}
+
+#bike-nine {
+	width: 300px;
+	height: 200px;
+	background-image: url(../images/bike-nine-small.png);
+	background-size: cover;
+	position: relative;
+	float: left;
+}
+
+/*footer*/
+
+footer {
+	width: auto;
+	height: 200px;
+	background-color: #282525;
+	clear: left;
+}
+
+.social-media {
+	padding: 20px 20px 20px 75px;
+	position: relative;
+	float: left;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.footer-links {
+	padding: 20px 75px 20px 20px;
+	position: relative;
+	float: right;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.footer-links .footer-info {
+	display: block;
+	color: white;
+	line-height: 25px;
+	text-align: right;
+}
+
+
+/*rollover styles*/
+.overlay {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	opacity: 0;
+}
+
+.button {
+	height: auto;
+	width: auto;
+	text-decoration: none;
+}
+
+.overlay:hover {
+	opacity: 1;
+}
+
+
+/*MOBILE VERSION*/
+
+ @media screen and (max-width:768px) {
+
+ 	/*MOBILE NAV*/
+
+    .hero-links {
+    	height: 0em; 
+    	transition: all 1s;
+    	position: static;
+    	top: 0;
+    	transform: none;
+    	overflow: hidden;
+    	padding: 0 0 0 0;
+    	float: right;
+    	margin-top: 90px;
+    }
+
+    header {
+      padding: 0px;
+    }
+
+    header .logo {
+      padding-top: 25px;
+      padding-left: 10px;
+      margin-top: 0px;
+    }
+
+	header nav ul li {
+      display: block; 
+      padding-top: 10px;
+    }
+
+    header nav, header nav .logo {
+     float:none; 
+    }
+
+    nav .hero-links li:first-child{ 
+      position: absolute; 
+      top: 20px; 
+      right: 1em; 
+    }
+
+    .line { 
+      width: 2em;
+      height: 3px;
+      background: white;
+      margin-top: .25em;
+      border: 1px solid white;
+    }
+    
+  .open {
+    height: 10em; 
+  }
+
+
+/*  layout*/
+
+  .hero {
+  	height: 100%;
+  }
+
+  .hero-container {
+  	width: 100%;
+  	white-space: normal;
+  	padding: 50px 0px 75px 20px;
+}
+
+.bike-section {
+	width: 85%;
+}
+  
+  nav {
+  	background-color: rgba(0,0,0,0.5);
+  }
+
+  footer {
+  	height: 300px;
+  }
+
+  .footer-links {
+  	float: none;
+  	transform: none;
+  	top: 0;
+  }
+
+  .social-media {
+  	float: none;
+  	transform: none;
+  	top: 0;
+  	display: inline;
+  	width: 100%;
+  	height: 100%;
+  	position: relative;
+  	padding: 0px;
+  	padding-left: 20px;
+}
+
+.socialdivs {
+	position: relative;
+	padding-top: 50px;
+}
+
+/*  carousel*/
+
+  .arrow {
+    width: 10%;
+  }
+
+  .slide-image {
+  	width: 100%;
+  }
+
+}
+
+
+@media (max-device-width: 1024px) {
+  .arrow {
+    width: 20%;
+  }
+}

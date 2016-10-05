@@ -1,0 +1,335 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+/*nav*/
+
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+nav {
+  height: 100px;
+  width: auto;
+  position: relative;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.logo {
+	padding: 20px 20px 20px 75px;
+	position: absolute;
+	float: left;
+  z-index: 1;
+}
+
+.hero-links {
+	font-weight: 700;
+	color: white;
+	padding: 20px 75px 20px 20px;
+	position: relative;
+	float: right;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.nav-links {
+	display: inline-block;
+	padding: 0px 20px 0px 20px;
+}
+
+#social-divs {
+  display: inline-block;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav-links a:hover {
+	color: #CA4949; 
+}
+
+/*individual bike view */
+
+.individual-bike {
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+  padding-top: 80px;
+}
+
+.bike-container {
+	width: auto;
+	height: auto;
+	padding: 75px 75px;
+}
+
+.bike-one {
+	width: 100%;
+}
+
+.individual-bike .bike-container .details{
+	width: auto;
+	height: auto;
+	position: relative;
+	text-align: left;
+	padding: 20px 0px 20px 0px;
+}
+
+.details li {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.details .price {
+	font-weight: 700;
+	font-size: 22px;
+	padding-top: 15px;
+}
+
+.contact-button {
+	width: auto;
+	height: auto;
+	text-align: left;
+	padding: 30px 0px;
+}
+
+.contact-button a {
+  text-decoration: none;
+}
+
+.cta {
+  background: #CA4949;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px 70px;
+}
+
+.cta:hover {
+  background-color: #AF3D3D;
+  color: white;
+}
+
+/*MODAL*/
+
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialog h2 {
+  font-weight: 400;
+  font-size: 24px;
+  padding: 15px 0px 15px 0px;
+}
+
+.modalDialog p {
+
+  padding-bottom: 5px;
+}
+
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #CA4949; }
+
+/*footer*/
+
+footer {
+	width: auto;
+	height: 200px;
+	background-color: #282525;
+	clear: left;
+}
+
+.social-media {
+	padding: 20px 20px 20px 75px;
+	position: relative;
+	float: left;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.footer-links {
+	padding: 20px 75px 20px 20px;
+	position: relative;
+	float: right;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.footer-links .footer-info {
+	display: block;
+	color: white;
+	line-height: 25px;
+	text-align: right;
+}
+
+ @media screen and (max-width:768px) {
+
+ 	/*MOBILE NAV*/
+
+    .hero-links{
+    	height: 0em; 
+    	transition: all 1s;
+    	position: static;
+    	top: none;
+    	transform: none;
+    	overflow: hidden;
+    	padding: 0 0 0 0;
+      margin-top: 50px;
+    }
+
+    header {
+      padding: 0px;
+    }
+
+      header .logo {
+      padding-top: 25px;
+      padding-left: 10px;
+      margin-top: 0px;
+    }
+
+	header nav ul li {
+      display: block; 
+      padding-top: 10px;
+    }
+
+    header nav, header nav .logo {
+     float:none; 
+    }
+
+    nav .hero-links li:first-child{ 
+      position: absolute; 
+      top: 20px; 
+      right: 1em; 
+    }
+
+    .line { 
+      width: 2em;
+      height: 3px;
+      background: white;
+      margin-top: .25em;
+      border: 1px solid white;
+    }
+    
+  .open {
+    height: 10em; 
+  }
+
+
+/*  layout*/
+
+  .hero {
+  	height: 100%;
+  }
+
+  .hero-container {
+  	width: 100%;
+  }
+  
+  nav {
+  	background-color: rgba(0,0,0,0.5);
+  }
+
+  .nav-links {
+	display: block;
+	padding: 10px 20px 10px 20px;
+}
+
+  footer {
+  	height: 300px;
+  }
+
+  .footer-links {
+  	float: none;
+  	transform: none;
+  	top: 0;
+  }
+
+  .social-media {
+  	float: none;
+  	transform: none;
+  	top: 0;
+  	display: inline;
+  	width: 100%;
+  	height: 100%;
+  	position: relative;
+  	padding: 0px;
+  	padding-left: 20px;
+}
+
+#social-divs {
+	position: relative;
+	margin-top: 50px;
+	display: inline-block;
+}
+
+#how {
+	padding-top: 40px;
+}
+
+/*  carousel*/
+
+  .arrow {
+    width: 10%;
+  }
+
+  .slide-image {
+  	width: 100%;
+  }
+
+}
